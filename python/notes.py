@@ -26,7 +26,6 @@ def submit():
         print("Both title and description are required.")
 
 def viewNote():
-    print("\n--- Saved Notes ---")
     for idx, note in enumerate(notes, start=1):
         print(f"{idx}. Title: {note['title']}\n   Description: {note['description']}\n")
     if not notes:
